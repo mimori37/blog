@@ -1,27 +1,29 @@
-# [GitPress](https://gitpress.io/)でブログを始める
+<title>GitPressを新規で公開したかっただけ</title>
+
+# GitPressでブログを始める
 
 さっさとGitPressを始めたい方向け
 
 私がブログを開通する際に行った手順です
 
 ## 手順
-### <u>1. Githubでリポジトリを作成</u>
+### 1. Githubでリポジトリを作成
 [Github公式サイト](https://github.com/) にアクセスし、ブログ用リポジトリを作成します
 
 ![新規リポジトリ作成](https://github.com/mimori37/blog/blob/main/picture/001-1.jpg)
 
-### <u>2. GitPressにログイン</u>
+### 2. GitPressにログイン
 [https://gitpress.io/login](https://gitpress.io/login) の「Login with Github」から自身のGithubアカウントと連携します
 
 ![GitPress連携](https://github.com/mimori37/blog/blob/main/picture/001-2.png)
 
-### <u>3. リポジトリを連携</u>
+### 3. リポジトリを連携
 Githubで作ったブログ用リポジトリを選択します
 
-### <u>4. Webhookを許可</u>
+### 4. Webhookを許可
 「Allow」してWebhookを許可します
 
-### <u>5. ローカルリポジトリの準備</u>
+### 5. ローカルリポジトリの準備
 以下のコマンドを叩いてローカルリポジトリを準備します
 
 ```shell-session:cmd
@@ -31,7 +33,7 @@ $ git init
 $ git remote add origin https://github.com/mimori37/blog.git
 ```
 
-### <u>6. Markdownファイルのコミットとプッシュ</u>
+### 6. Markdownファイルのコミットとプッシュ
 記事になるMarkdawnを作ります
 例として、以下のhello.mdを作ります
 ```markdawn:hello.md
@@ -46,7 +48,7 @@ $ git commit -m "hello.md added"
 $ git branch -M main
 ```
 
-### <u>6-1. 「Please tell me who you are」が返ってきた場合</u>
+### 6-1. 「Please tell me who you are」が返ってきた場合
 続けてプッシュした際に.gitconfigがないと、以下のような応答が返ります
 
 このような応答がされない方（正常）は「6-2. [.gitconfig]が作成済み」へスキップしてください
@@ -87,7 +89,7 @@ $ git config user.email hogehoge@hoge.com
 $ cd ..\..
 ```
 
-### <u>6-2. [.gitconfig]が作成済み</u>
+### 6-2. [.gitconfig]が作成済み
 コミットが成功しているときは大体以下のような応答が返っていたはずです
 ```shell-session:cmd
 $ git commit -m "hello.md added"
@@ -111,7 +113,7 @@ To https://github.com/mimori37/blog.git
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
-### <u>7. 確認</u>
+### 7. 確認
 ブログが完成してるはずなので、ブラウザから確認してみます
 https://github.com/mimori37/blog
 
