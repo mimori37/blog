@@ -8,12 +8,12 @@
 ### 1. Githubでリポジトリを作成
 [Github公式サイト](https://github.com/) にアクセスし、ブログ用リポジトリを作成します
 
-![新規リポジトリ作成](https://github.com/mimori37/blog/blob/main/picture/001-1.jpg)
+![新規リポジトリ作成](https://github.com/mimori37/blog/blob/b42590e1afa198dc717189bb725da563279bfc76/picture/001-1.jpg)
 
 ### 2. GitPressにログイン
 [https://gitpress.io/login](https://gitpress.io/login) の「Login with Github」から自身のGithubアカウントと連携します
 
-![GitPress連携](https://github.com/mimori37/blog/blob/main/picture/001-2.png)
+![GitPress連携](https://github.com/mimori37/blog/blob/b42590e1afa198dc717189bb725da563279bfc76/picture/001-2.png)
 
 ### 3. リポジトリを連携
 Githubで作ったブログ用リポジトリを選択します
