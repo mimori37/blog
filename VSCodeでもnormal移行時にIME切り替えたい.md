@@ -1,28 +1,27 @@
 # VSCodeでもnormal移行時に英数IMEに切り替えたいvimmerへ
-***
 長い間悩んでいたにも関わらず、案外あっさりと片付いてしまったので、ざっとご紹介<br>
 ちなみに私はVSCode-Neovimを使ってますが、この方法ならVSCode-vimでも動きそうな気がします<br>
 <br>
 
-## 解決の糸口: zenhan
 ***
+## 解決の糸口: zenhan
 WindowsでIMEモードを切り替えるだけのシンプルなプログラムですが、これと.vimrcのnormal移行検知を組み合わせるだけでかなり便利になります<br>
 作者には足を向けて寝られません<br>
 <br>
 
-## 実践
 ***
+## 実践
 やることは以下の3つのみです
 <br>
 
-## zipファイルをダウンロードする
 ***
+## zipファイルをダウンロードする
 [iuchi氏の記事](https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c)からzipファイルを適当な場所にダウンロードする<br>
 ちなみに私がダウンロードした時は、実行ファイル名はspzenhan.exeになっていたので、実行ファイル名が「spzenhan.exe」だったとして話を進めます<br>
 <br>
 
-## 環境変数pathにzenhan.exeのあるフォルダのパスを追加する
 ***
+## 環境変数pathにzenhan.exeのあるフォルダのパスを追加する
 アプリの検索バーに「システム」あたりまで入力すれば
 「システム環境変数の編集」項目が出ることかと思います<br>
 
@@ -45,8 +44,8 @@ $spzenhan 1   # 日本語IMEを使用
 ```
 <br>
 
-## .vimrcにノーマル復帰時の処理を書いて保存する
 ***
+## .vimrcにノーマル復帰時の処理を書いて保存する
 
 自分の.vimrcを開いて、以下の処理を入力
 
@@ -71,14 +70,14 @@ autocmd InsertEnter * :call system('spzenhan 0')
 ~~厳密に言えばIMEをONにしてるだけですが~~ <br>
 <br>
 
-## VSCodeで動作確認
 ***
+## VSCodeで動作確認
 設定は以上<br>
 あとはVSCodeを開いて試してみてください<br>
 <br>
 
-## 参考にしたページ
 ***
+## 参考にしたページ
 [Win版の VS Code+VSCodeVim でノーマルモードに戻った時にIMEを半角英数入力にする](https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c)<br>
 
 [【キラーアプリ】VSCodeの新たなVim拡張はNeoVimがおすすめ！](https://wonwon-eater.com/vscode-nvim/#outline__4_1)<br>
