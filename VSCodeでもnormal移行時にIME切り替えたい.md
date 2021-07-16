@@ -1,4 +1,5 @@
-# VSCodeでもnormal移行時に英数IMEに切り替えたいvimmerへ
+# VSCodeでもnormal移行時に英数IMEに切り替えたい
+
 長い間悩んでいたにも関わらず、案外あっさりと片付いてしまったので、ざっとご紹介<br>
 ちなみに私はVSCode-Neovimを使ってますが、この方法ならVSCode-vimでも動きそうな気がします<br>
 <br>
